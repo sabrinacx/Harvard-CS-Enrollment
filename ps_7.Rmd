@@ -1,0 +1,11 @@
+---
+title: "ps_7"
+author: "Sabrina Chok"
+date: "4/9/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
