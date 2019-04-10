@@ -16,7 +16,7 @@ library(ggthemes)
 library(RColorBrewer)
 ```
 
-```{r, cache=TRUE}
+```{r, cache=TRUE, echo=FALSE}
 
 #Download spring 2018 and 2019 Harvard course data from registrar website
 
@@ -40,7 +40,7 @@ s18 <- read_excel("s18.xlsx", skip = 2) %>%
 fs::file_delete(c("s19.xlsx", "s18.xlsx"))
 ```
 
-```{r}
+```{r, echo=FALSE}
 #Prepare dataframe for final graphic which shows greatest course enrollment percent increases and decreases in the Computer Science department.
 
 #Left join spring 2018 and 2019 dataframes by course id to find common classes taught in both semesters. Select columns for course title, name, department, and number of undergrads in 2018 and 2019.
@@ -79,7 +79,7 @@ y <- bind_rows(top5, bottom5) %>%
 
 ```
 
-```{r}
+```{r, echo= FALSE}
 
 #Create graphic that shows trends in Harvard Computer Science Course Enrollment in Spring 2018 to 2019
 
@@ -101,8 +101,8 @@ y %>%
   #Adjust position and size of the title, caption, and subtitle to ensure text fits in the graphic and looks visually appealing
   
   theme(plot.caption = element_text(size = rel(.4)),
-        plot.title = element_text(hjust = 1.0, size = 14),
-        plot.subtitle = element_text(hjust = 1.1, size = 10)) 
+        plot.title = element_text(hjust = 1.0, size = 13),
+        plot.subtitle = element_text(hjust = 1.0, size = 10)) 
   
 ```
 
