@@ -1,5 +1,5 @@
 ---
-title: "ps_7"
+title: "CS Course Enrollment"
 author: "Sabrina Chok"
 date: "4/9/2019"
 output: html_document
