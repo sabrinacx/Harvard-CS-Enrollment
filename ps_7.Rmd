@@ -16,7 +16,7 @@ library(ggthemes)
 library(RColorBrewer)
 ```
 
-```{r, cache=TRUE, echo=FALSE}
+```{r data, cache=TRUE, echo=FALSE}
 
 #Download spring 2018 and 2019 Harvard course data from registrar website
 
@@ -40,7 +40,7 @@ s18 <- read_excel("s18.xlsx", skip = 2) %>%
 fs::file_delete(c("s19.xlsx", "s18.xlsx"))
 ```
 
-```{r, echo=FALSE}
+```{r dataframe, echo=FALSE}
 #Prepare dataframe for final graphic which shows greatest course enrollment percent increases and decreases in the Computer Science department.
 
 #Left join spring 2018 and 2019 dataframes by course id to find common classes taught in both semesters. Select columns for course title, name, department, and number of undergrads in 2018 and 2019.
@@ -79,7 +79,7 @@ y <- bind_rows(top5, bottom5) %>%
 
 ```
 
-```{r, echo= FALSE}
+```{r graphic, echo= FALSE}
 
 #Create graphic that shows trends in Harvard Computer Science Course Enrollment in Spring 2018 to 2019
 
