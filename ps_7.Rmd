@@ -9,9 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
-library(fs)
 library(readxl)
 library(janitor)
+library(fs)
 library(ggthemes)
 library(RColorBrewer)
 ```
